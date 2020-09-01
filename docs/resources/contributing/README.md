@@ -13,10 +13,9 @@ VuePress makes updating and adding new content reasonably straightforward. If yo
 
 ### Updating content
 
-First, make sure you have a GitHub account. If you don't and would like to contribute, please reach out to Dan via email or slack.
+First, make sure you have a GitHub account. If you don't and would like to contribute, please reach out to Brian via email or slack.
 
-- Visit a page on the website. Let's go with our ["Welcome to Denver" Page](https://denverdevs.org/resources/welcome-to-denver/)
-
+- Visit a page on the website.
 - Scroll all the way down the page, you should see a "Help Us Improve This Page" link. Click that.
 - You may need to sign in to GitHub here.
 - You should see GitHub's built-in file editor. We use Markdown for all of our pages - if you're unfamiliar with Markdown syntax check out [this handy guide](https://www.google.com/search?client=safari&rls=en&q=github+markdown&ie=UTF-8&oe=UTF-8)
@@ -25,12 +24,9 @@ First, make sure you have a GitHub account. If you don't and would like to contr
 - Fire off your pull request, we'll review it and work with you if any updates need to be made.
 - Thanks for contributing!
 
-### Adding a new page
-
-If you'd like to add a new page, we'll need to account for a few things first. Are you adding a new top-level page? Will this go within a specific subsection? If a new page sounds viable, we advise you chat it out in our [#topic-community](https://denver-devs.slack.com/app_redirect?channel=topic-community) channel in the Denver Devs Slack.
 
 ## Updating or adding Vue components
 
-VuePress handles components just like a typical Vue installation - except it bundles them in a different place. To find our components, you'll need to visit `denverdevs.org/docs/.vuepress/components/` - that's where you'll find them.
+VuePress handles components just like a typical Vue installation - except it bundles them in a different place. To find our components, you'll need to visit `pdxdevs.org/docs/.vuepress/components/` - that's where you'll find them.
 
 We suggest pulling this repo down and working on it locally.

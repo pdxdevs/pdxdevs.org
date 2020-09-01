@@ -3,11 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "docs:dev": "yarn getData; vuepress dev docs",
-    "docs:build": "yarn getData; vuepress build docs",
-    "getData": "node ./static-data/getConferences.js; node ./static-data/getMeetups.js; node ./static-data/getDDMeetups.js; node ./static-data/requestChannels.js",
-    "getMeetupURLs": "node ./static-data/requestMeetupURLs.js",
-    "getMeetups": "node ./static-data/getMeetups.js"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "axios": "^0.18.1",

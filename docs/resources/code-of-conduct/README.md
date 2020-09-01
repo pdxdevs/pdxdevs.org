@@ -7,7 +7,7 @@ next: false
 
 ## Overview
 
-Denver Devs is dedicated to providing a harassment-free experience for everyone, regardless of gender identity or expression, sexual orientation, disability, physical appearance, body size, race, age, religion or nonreligion. We do not tolerate harassment of participants in any form. Harassment includes offensive comments & communication related to age, gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images, deliberate intimidation, stalking, sustained disruption of discussions or other events, and unwelcome sexual attention. If a participant engages in behavior that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the group.
+Portland Devs is dedicated to providing a harassment-free experience for everyone, regardless of gender identity or expression, sexual orientation, disability, physical appearance, body size, race, age, religion or nonreligion. We do not tolerate harassment of participants in any form. Harassment includes offensive comments & communication related to age, gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images, deliberate intimidation, stalking, sustained disruption of discussions or other events, and unwelcome sexual attention. If a participant engages in behavior that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the group.
 
 
 ## Open Source Citizenship
@@ -42,7 +42,6 @@ The following behaviors are considered harassment and are unacceptable within ou
 *   Unwelcome sexual attention. This includes, sexualized comments or jokes.
 *   Deliberate intimidation, stalking or following (online or in person).
 *   Advocating for, or encouraging, any of the above behavior.
-*   Sustained disruption of on-topic channels. Disruption is only okay in #topic-random because anarchy. 
 
 ## Consequences of Unacceptable Behavior
 
@@ -54,11 +53,11 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a Denver Devs admin as soon as possible. info@denverdevs.org.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify an admin as soon as possible. info@pdxdevs.org. If your report involves Brian, or you feel it would be inappropriate to talk with him about this issue, you can contact the HR person at his company, <a href="mailto:kathryn@devetry.com">kathryn@devetry.com</a>.
 
 ## Addressing Grievances
 
-If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Denver Devs admins with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
+If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Portland Devs admins with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
 
 
 ## Scope
@@ -70,8 +69,7 @@ This code of conduct and its related procedures also applies to unacceptable beh
 
 ## Contact info
 
-info@denverdevs.org
-
+info@pdxdevs.org
 
 ## License and attribution
 

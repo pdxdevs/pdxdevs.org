@@ -1,8 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0bd79c4e-c5d1-42b4-a33e-2a5630389064/deploy-status)](https://app.netlify.com/sites/denver-devs/deploys)
+# PDX Devs Website - pdxdevs.org
 
-# Denver Devs Website - denverdevs.org
-
-Here's where the magic happens. This is the denverdevs.org website, which is basically a bunch of words wrapped around one critical feature: the automatic Slack invite component. We're using VuePress, a touch of AWS Lambda magic, Netlify for hosting & keeping data updated. 
+Here's where the magic happens. This is the pdxdevs.org website, which is basically a bunch of words wrapped around one critical feature: the automatic Slack invite component. We're using VuePress, a touch of AWS Lambda magic, Netlify for hosting & keeping data updated.
 
 ## Getting Started
 
@@ -23,13 +21,13 @@ Get VuePress [here](https://vuepress.vuejs.org/guide/getting-started.html#global
 Clone this directory into the area you want:
 
 ```bash
-git clone https://github.com/Denver-Devs/denverdevs.org
+git clone https://github.com/pdxdevs/pdxdevs.org
 ```
 
 Hop into the directory it's at:
 
 ```bash
-cd denverdevs.org
+cd pdxdevs.org
 ```
 
 Get the dependancies / node_modules installed:
@@ -65,8 +63,9 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## Authors
 
 * **Dan Hannigan** - *Initial work* - [danhannigan](https://github.com/danhannigan)
+* **Brian Schiller** - *Portland Fork* - [bgschiller](https://github.com/bgschiller)
 
-See also the list of [contributors](https://github.com/denver-devs/denverdevs.org/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/pdxdevs/pdxdevs.org/contributors) who participated in this project.
 
 ## License
 
@@ -76,5 +75,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Shout out to the Vue.js team and VuePress. Got us up and running in no time.
 * Appreciate the free tiers open on so many great tools out there - they're a lifesaver when it comes to non-profit community projects.
-* The admins & community of denverdevs.org, thanks for being here.
+* The community of denverdevs.org, the group that taught me this was possible.
 * Also thanks to PurpleDoor for the rad [readme template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2).
