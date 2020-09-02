@@ -3,18 +3,38 @@
     <div class="masthead">
       <div class="masthead-inner">
         <h1>Bringing the Portland developer community together.</h1>
-        <p>We're building a community focused on helping each other find jobs, solve problems, make friends, and so much more.</p>
         <p>
-          This group is still getting off the ground, so you can be a part from the very beginning. Add your email to get notified of what's going on, or drop us a note to say hi:
-          <a
-            href="mailto:info@pdxdevs.org"
-          >info@pdxdevs.org</a>
+          We're building a community focused on helping each other find jobs,
+          solve problems, make friends, and so much more.
+        </p>
+        <p>
+          This group is still getting off the ground, so you can be a part from
+          the very beginning. Add your email to get notified of what's going on,
+          or drop us a note to say hi:
+          <a href="mailto:info@pdxdevs.org">info@pdxdevs.org</a>
         </p>
         <div class="masthead-invite-block">
           <h2>Hear when this thing starts</h2>
           <form action="https://formspree.io/xpzygqrd" method="POST">
-            <input type="email" name="_replyto" placeholder="email" />
-            <input type="submit" value="Send" />
+            <label>
+              <span>Email:</span>
+              <input
+                type="email"
+                name="_replyto"
+                placeholder="Your Email Address"
+              />
+            </label>
+            <input
+              type="input"
+              name="sneakypizza"
+              value
+              style="display: none"
+              tabindex="-1"
+              autocomplete="off"
+            />
+            <button type="submit">
+              Add email
+            </button>
           </form>
         </div>
       </div>
@@ -23,31 +43,59 @@
     <div class="home-body">
       <div class="info-section">
         <h2>So what is it?</h2>
-        <p>Portland Devs is a nascent group of folks interested in advancing the Portland tech community.</p>
-        <p>To start, this will consist of a Slack or Discord group. Imagine a friendlier Stack Overflow with familiar faces (or at least usernames) answering your questions about React, CSS, C++, anything. A place to share the cool side project or library you just launched. A career advice channel where you can ask about negotiating a raise, or get feedback on your cover letter.</p>
+        <p>
+          Portland Devs is a nascent group of folks interested in advancing the
+          Portland tech community.
+        </p>
+        <p>
+          To start, this will consist of a Slack or Discord group. Imagine a
+          friendlier Stack Overflow with familiar faces (or at least usernames)
+          answering your questions about React, CSS, C++, anything. A place to
+          share the cool side project or library you just launched. A career
+          advice channel where you can ask about negotiating a raise, or get
+          feedback on your cover letter.
+        </p>
 
         <h2>Who can join?</h2>
-        <p>Anyone can join! We're open to folks of all experience levels, tech professions, age, gender - and even location if you're nice enough ;)</p>
+        <p>
+          Anyone can join! We're open to folks of all experience levels, tech
+          professions, age, gender - and even location if you're nice enough ;)
+        </p>
 
         <h2>Slack, Discord, IRC? Where is this thing happening?</h2>
         <p>
-          Help us decide! Right now, I'm leaning towards slack. Many people already have it open for work, so it has some network effects. Think Discord is better? Spectrum? RocketChat? Make a pitch for your favorite:
-          <a
-            href="mailto: info@pdxdevs.org"
-          >info@pdxdevs.org</a>.
-          Our priorities are:
+          Help us decide! Right now, I'm leaning towards slack. Many people
+          already have it open for work, so it has some network effects. Think
+          Discord is better? Spectrum? RocketChat? Make a pitch for your
+          favorite:
+          <a href="mailto: info@pdxdevs.org">info@pdxdevs.org</a>. Our
+          priorities are:
         </p>
         <ul>
           <li>Free (or very cheap). We do not have a budget.</li>
-          <li>Accessible. Both in the "easy to learn to use" sense and also the screenreader sense.</li>
-          <li>Fun. Custom emojis are a plus. I like the slackbot auto-reply thing.</li>
+          <li>
+            Accessible. Both in the "easy to learn to use" sense and also the
+            screenreader sense.
+          </li>
+          <li>
+            Fun. Custom emojis are a plus. I like the slackbot auto-reply thing.
+          </li>
         </ul>
 
         <h2>So, it doesn't exist yet? What's the plan?</h2>
-        <p>No, it doesn't exist just yet. One danger of a group like this is that there's not enough going on initially and people stop showing up. I'm hoping we can generate some interest, then do a "launch" and turn the whole thing on. Ride that momentum, bay-bee!</p>
+        <p>
+          No, it doesn't exist just yet. One danger of a group like this is that
+          there's not enough going on initially and people stop showing up. I'm
+          hoping we can generate some interest, then do a "launch" and turn the
+          whole thing on. Ride that momentum, bay-bee!
+        </p>
 
         <h2>I'm not a developer - is that okay?</h2>
-        <p>Absolutely! If you're in to design, UX, Project Management, any kind of coding, or are just curious and want to connect with tech-minded folks this is still the place for you. Get on in here!</p>
+        <p>
+          Absolutely! If you're in to design, UX, Project Management, any kind
+          of coding, or are just curious and want to connect with tech-minded
+          folks this is still the place for you. Get on in here!
+        </p>
       </div>
     </div>
   </div>
@@ -58,8 +106,8 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -67,7 +115,7 @@ export default {
 @import "./styles/_global.scss";
 
 .masthead {
-  background: $nile-blue;
+  background: $dark-cascadia-blue;
   box-sizing: border-box;
   color: $white;
   overflow: hidden;
@@ -112,7 +160,7 @@ export default {
   max-width: 768px;
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 4em;
   }
 
@@ -120,13 +168,61 @@ export default {
     max-width: 940px;
   }
 
+  h2 {
+    border-bottom: none;
+    margin-bottom: 1em;
+  }
+
   form {
-    margin-top: 2em;
-    margin-left: 2em;
-    input {
-      margin-top: 1em;
-      font-size: 1.4rem;
-      border-bottom: 3px solid $gold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  label span {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 16px;
+  }
+
+  button {
+    background: gold;
+    font-family: $OpenSans;
+    font-weight: 700;
+    text-align: center;
+    border: 0px;
+    padding: 1rem;
+    color: $dark-cascadia-blue;
+
+    @media screen and (min-width: 1024px) {
+      display: inline-block;
+      min-width: 114px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
@@ -146,9 +242,9 @@ export default {
   padding: 1em;
 
   &:nth-of-type(1) {
-    border-left: 1em solid $gold;
+    border-left: 1em solid $border-green;
     @media screen and (min-width: 768px) {
-      border-left: 3em solid $gold;
+      border-left: 3em solid $border-green;
     }
   }
 

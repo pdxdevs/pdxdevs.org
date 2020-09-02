@@ -15,7 +15,6 @@ module.exports = {
     lastUpdated: "Last Updated",
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
       {
         text: "Rules & Resources",
         items: [
@@ -36,7 +35,6 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/about/": [""],
       "/resources/": [
         {
           title: "Rules & Guidelines",

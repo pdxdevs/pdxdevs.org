@@ -23,7 +23,9 @@
         type="submit"
         v-bind:class="[submitted ? 'submitted' : '']"
         :disabled="submitted == true"
-      >{{ buttonText }}</button>
+      >
+        {{ buttonText }}
+      </button>
       <transition name="notification-pop">
         <div class="message" v-if="hasResponse">{{ message }}</div>
       </transition>
@@ -42,12 +44,17 @@
             />
           </svg>
           <div>
-            <span>Invite requested for {{email | trunc(14, '(...)') }}</span>
+            <span>Invite requested for {{ email | trunc(14, "(...)") }}</span>
             Look for your invite soon.
           </div>
           <svg
             class="close"
-            @click="status = '', submitted = false, buttonText = 'Get your invite', email=''"
+            @click="
+              (status = ''),
+                (submitted = false),
+                (buttonText = 'Get your invite'),
+                (email = '')
+            "
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -73,12 +80,20 @@
           />
         </svg>
         <div>
-          <span>Invite requested for {{invitedEmail | trunc(14, '(...)') }}</span>
+          <span
+            >Invite requested for {{ invitedEmail | trunc(14, "(...)") }}</span
+          >
           We're processing your invite.
         </div>
         <svg
           class="close"
-          @click="status = '', submitted = false, invited = false, buttonText = 'Get your invite', email=''"
+          @click="
+            (status = ''),
+              (submitted = false),
+              (invited = false),
+              (buttonText = 'Get your invite'),
+              (email = '')
+          "
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
@@ -94,17 +109,21 @@
     <transition name="notification-pop-fast">
       <div class="invite-notice" v-show="heads_up">
         <h3>Heads up!</h3>
-        <p>When you request an invite it requires a staff member to review and approve it - we'll be available pretty often to handle that but this is not an automated system and may take time. Give us at least 24 hours.</p>
+        <p>
+          When you request an invite it requires a staff member to review and
+          approve it - we'll be available pretty often to handle that but this
+          is not an automated system and may take time. Give us at least 24
+          hours.
+        </p>
       </div>
     </transition>
 
     <transition name="notification-pop-fast">
       <div class="invite-notice" v-show="invited">
         <p>
-          You've already sent an invite request for that email. Please wait 24 hours and try again or
-          <a
-            href="mailto:info@denverdevs.org"
-          >contact help</a>.
+          You've already sent an invite request for that email. Please wait 24
+          hours and try again or
+          <a href="mailto:info@denverdevs.org">contact help</a>.
         </p>
       </div>
     </transition>
@@ -128,14 +147,14 @@ export default {
       hasResponse: "",
       heads_up: "",
       submitted: "",
-      buttonText: "Get your invite"
+      buttonText: "Get your invite",
     };
   },
 
   filters: {
     trunc(text, length, suffix) {
       return text.length < 14 ? text : `${text.substring(0, length)}${suffix}`;
-    }
+    },
   },
   mounted() {
     lscache.flushExpired();
@@ -164,17 +183,17 @@ export default {
             .post(
               `https://kapgbb2ttf.execute-api.us-east-1.amazonaws.com/dev/invite`,
               {
-                email: this.email
+                email: this.email,
               }
             )
-            .then(response => {
+            .then((response) => {
               this.status = response.data.status;
               this.status = "invite-success";
               setTimeout(() => {
                 this.hasResponse = false;
               }, 4000);
             })
-            .catch(error => {
+            .catch((error) => {
               console.error(error);
               this.message =
                 "Uh oh, somethings wrong here (and it's on us) - reach out to help@denverdevs.org.";
@@ -194,8 +213,8 @@ export default {
       setTimeout(() => {
         this.hasResponse = false;
       }, 4000);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -256,7 +275,7 @@ button {
   text-align: center;
   border: 0px;
   padding: 1rem;
-  color: $nile-blue;
+  color: $dark-cascadia-blue;
 
   @media screen and (min-width: 1024px) {
     display: inline-block;
