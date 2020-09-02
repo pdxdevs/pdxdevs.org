@@ -32,7 +32,7 @@
               tabindex="-1"
               autocomplete="off"
             />
-            <button type="submit">
+            <button type="submit" @click="trackEvent">
               Add email
             </button>
           </form>
@@ -106,6 +106,11 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
+    },
+  },
+  methods: {
+    trackEvent() {
+      window.ga("send", "event", "button-click", "add-email");
     },
   },
 };
