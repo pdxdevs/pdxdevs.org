@@ -4,7 +4,14 @@ module.exports = {
     "We are a Portland, OR based software engineer community focused on helping each other find jobs, solve problems, make friends, and so much more.",
   head: [["link", { rel: "icon", href: "/icon.png" }]],
   serviceWorker: false,
-  plugins: [],
+  plugins: [
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-42131022-4",
+      },
+    ],
+  ],
   themeConfig: {
     search: false,
     repo: "pdxdevs/pdxdevs.org",
