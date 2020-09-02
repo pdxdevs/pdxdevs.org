@@ -9,7 +9,6 @@ next: false
 
 Portland Devs is dedicated to providing a harassment-free experience for everyone, regardless of gender identity or expression, sexual orientation, disability, physical appearance, body size, race, age, religion or nonreligion. We do not tolerate harassment of participants in any form. Harassment includes offensive comments & communication related to age, gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images, deliberate intimidation, stalking, sustained disruption of discussions or other events, and unwelcome sexual attention. If a participant engages in behavior that violates this code of conduct, the organizers may take any action they deem appropriate, including warning the offender or expulsion from the group.
 
-
 ## Open Source Citizenship
 
 A supplemental goal of this Code of Conduct is to increase open source citizenship by encouraging participants to recognize and strengthen the relationships between our actions and their effects on our community.
@@ -22,26 +21,26 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 The following behaviors are expected and requested of all community members:
 
-*   Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
-*   Exercise consideration and respect in your speech and actions.
-*   Attempt collaboration before conflict.
-*   Refrain from demeaning, discriminatory, or harassing behavior and speech.
-*   Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
-*   Remember that community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
+- Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
+- Exercise consideration and respect in your speech and actions.
+- Attempt collaboration before conflict.
+- Refrain from demeaning, discriminatory, or harassing behavior and speech.
+- Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
+- Remember that community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
 
 ## Unacceptable Behavior
 
 The following behaviors are considered harassment and are unacceptable within our community:
 
-*   Violence, threats of violence or violent language directed against another person.
-*   Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
-*   Posting or displaying sexually explicit or violent material.
-*   Posting or threatening to post other people’s personally identifying information ("doxing").
-*   Personal insults, particularly those related to gender, sexual orientation, race, age, religion/nonreligion, or disability.
-*   Inappropriate photography or recording.
-*   Unwelcome sexual attention. This includes, sexualized comments or jokes.
-*   Deliberate intimidation, stalking or following (online or in person).
-*   Advocating for, or encouraging, any of the above behavior.
+- Violence, threats of violence or violent language directed against another person.
+- Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
+- Posting or displaying sexually explicit or violent material.
+- Posting or threatening to post other people’s personally identifying information ("doxing").
+- Personal insults, particularly those related to gender, sexual orientation, race, age, religion/nonreligion, or disability.
+- Inappropriate photography or recording.
+- Unwelcome sexual attention. This includes, sexualized comments or jokes.
+- Deliberate intimidation, stalking or following (online or in person).
+- Advocating for, or encouraging, any of the above behavior.
 
 ## Consequences of Unacceptable Behavior
 
@@ -53,12 +52,11 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify an admin as soon as possible. info@pdxdevs.org. If your report involves Brian, or you feel it would be inappropriate to talk with him about this issue, you can contact the HR person at his company, <a href="mailto:kathryn@devetry.com">kathryn@devetry.com</a>.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify an admin as soon as possible. <a href="mailto:info@pdxdevs.org">info@pdxdevs.org</a>. If your report involves Brian, or you feel it would be inappropriate to talk with him about this issue, you can contact the HR person at his company, <a href="mailto:kathryn@devetry.com">kathryn@devetry.com</a>.
 
 ## Addressing Grievances
 
 If you feel you have been falsely or unfairly accused of violating this Code of Conduct, you should notify Portland Devs admins with a concise description of your grievance. Your grievance will be handled in accordance with our existing governing policies.
-
 
 ## Scope
 
@@ -66,10 +64,9 @@ We expect all community participants (contributors, paid or otherwise; sponsors;
 
 This code of conduct and its related procedures also applies to unacceptable behavior occurring outside the scope of community activities when such behavior has the potential to adversely affect the safety and well-being of community members.
 
-
 ## Contact info
 
-info@pdxdevs.org
+For feedback about this code of conduct, or to report a violation, email <a href="mailto:info@pdxdevs.org">info@pdxdevs.org</a>.
 
 ## License and attribution
 
