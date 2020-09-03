@@ -11,18 +11,16 @@
           This group is still getting off the ground, so you can be a part from
           the very beginning. Add your email to get notified of what's going on,
           or drop us a note to say hi:
-          <a href="mailto:info@pdxdevs.org">info@pdxdevs.org</a>
+          <a
+            href="mailto:info@pdxdevs.org"
+          >info@pdxdevs.org</a>
         </p>
         <div class="masthead-invite-block">
           <h2>Hear when this thing starts</h2>
           <form action="https://formspree.io/xpzygqrd" method="POST">
             <label>
               <span>Email:</span>
-              <input
-                type="email"
-                name="_replyto"
-                placeholder="Your Email Address"
-              />
+              <input type="email" name="_replyto" placeholder="Your Email Address" />
             </label>
             <input
               type="input"
@@ -32,9 +30,7 @@
               tabindex="-1"
               autocomplete="off"
             />
-            <button type="submit" @click="trackEvent">
-              Add email
-            </button>
+            <button type="submit" @click="trackEvent">Add email</button>
           </form>
         </div>
       </div>
@@ -68,7 +64,9 @@
           already have it open for work, so it has some network effects. Think
           Discord is better? Spectrum? RocketChat? Make a pitch for your
           favorite:
-          <a href="mailto: info@pdxdevs.org">info@pdxdevs.org</a>. Our
+          <a
+            href="mailto: info@pdxdevs.org"
+          >info@pdxdevs.org</a>. Our
           priorities are:
         </p>
         <ul>
@@ -77,9 +75,7 @@
             Accessible. Both in the "easy to learn to use" sense and also the
             screenreader sense.
           </li>
-          <li>
-            Fun. Custom emojis are a plus. I like the slackbot auto-reply thing.
-          </li>
+          <li>Fun. Custom emojis are a plus. I like the slackbot auto-reply thing.</li>
         </ul>
 
         <h2>So, it doesn't exist yet? What's the plan?</h2>
@@ -106,13 +102,13 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
-    },
+    }
   },
   methods: {
     trackEvent() {
       window.ga("send", "event", "button-click", "add-email");
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -150,7 +146,7 @@ export default {
   z-index: 5;
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   a {
