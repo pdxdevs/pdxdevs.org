@@ -88,7 +88,7 @@
 
         <h2>I'm not a developer - is that okay?</h2>
         <p>
-          Absolutely! If you're in to design, UX, Project Management, any kind
+          Absolutely! If you're into design, UX, Project Management, any kind
           of coding, or are just curious and want to connect with tech-minded
           folks this is still the place for you. Get on in here!
         </p>
