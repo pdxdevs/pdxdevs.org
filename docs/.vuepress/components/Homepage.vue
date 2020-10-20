@@ -16,22 +16,18 @@
           >info@pdxdevs.org</a>
         </p>
         <div class="masthead-invite-block">
-          <h2>Hear when this thing starts</h2>
-          <form action="https://formspree.io/xpzygqrd" method="POST">
-            <label>
-              <span>Email:</span>
-              <input type="email" name="_replyto" placeholder="Your Email Address" />
-            </label>
-            <input
-              type="input"
-              name="sneakypizza"
-              value
-              style="display: none"
-              tabindex="-1"
-              autocomplete="off"
-            />
-            <button type="submit" @click="trackEvent">Add email</button>
-          </form>
+          <div class="slack-invite">
+            <h3>
+              Join us on
+              <a href="https://pdx-devs.slack.com">Slack</a>
+            </h3>
+            <SlackInvite></SlackInvite>
+            <p class="coc-notice">
+              By joining, you agree to our
+              <a href="/resources/rules/">Rules</a> and
+              <a href="/resources/code-of-conduct/">Code of Conduct</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -44,46 +40,19 @@
           Portland tech community.
         </p>
         <p>
-          To start, this will consist of a Slack or Discord group. Imagine a
+          To start, this Consists of a Slack group. Imagine a
           friendlier Stack Overflow with familiar faces (or at least usernames)
           answering your questions about React, CSS, C++, anything. A place to
           share the cool side project or library you just launched. A career
           advice channel where you can ask about negotiating a raise, or get
           feedback on your cover letter.
         </p>
+        <p>Longer term (after COVID), I'd love to put on in-person meetups and other events.</p>
 
         <h2>Who can join?</h2>
         <p>
           Anyone can join! We're open to folks of all experience levels, tech
           professions, age, gender - and even location if you're nice enough ;)
-        </p>
-
-        <h2>Slack, Discord, IRC? Where is this thing happening?</h2>
-        <p>
-          Help us decide! Right now, I'm leaning towards slack. Many people
-          already have it open for work, so it has some network effects. Think
-          Discord is better? Spectrum? RocketChat? Make a pitch for your
-          favorite:
-          <a
-            href="mailto: info@pdxdevs.org"
-          >info@pdxdevs.org</a>. Our
-          priorities are:
-        </p>
-        <ul>
-          <li>Free (or very cheap). We do not have a budget.</li>
-          <li>
-            Accessible. Both in the "easy to learn to use" sense and also the
-            screenreader sense.
-          </li>
-          <li>Fun. Custom emojis are a plus. I like the slackbot auto-reply thing.</li>
-        </ul>
-
-        <h2>So, it doesn't exist yet? What's the plan?</h2>
-        <p>
-          No, it doesn't exist just yet. One danger of a group like this is that
-          there's not enough going on initially and people stop showing up. I'm
-          hoping we can generate some interest, then do a "launch" and turn the
-          whole thing on. Ride that momentum, bay-bee!
         </p>
 
         <h2>I'm not a developer - is that okay?</h2>
@@ -150,7 +119,6 @@ export default {
   }
 
   a {
-    border-bottom: 3px solid $venice-blue;
     color: $white;
     text-decoration: none;
   }
@@ -172,59 +140,6 @@ export default {
   h2 {
     border-bottom: none;
     margin-bottom: 1em;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-
-    @media screen and (min-width: 768px) {
-      flex-direction: row;
-    }
-  }
-
-  label span {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  input {
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    font-size: 1rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 0px;
-    box-shadow: none;
-    font-size: 16px;
-  }
-
-  button {
-    background: gold;
-    font-family: $OpenSans;
-    font-weight: 700;
-    text-align: center;
-    border: 0px;
-    padding: 1rem;
-    color: $dark-cascadia-blue;
-
-    @media screen and (min-width: 1024px) {
-      display: inline-block;
-      min-width: 114px;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   .coc-notice {

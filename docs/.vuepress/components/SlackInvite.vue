@@ -1,6 +1,6 @@
 <template>
   <div class="slack-invite" v-bind:class="[status ? 'invite-success' : '']">
-    <form @submit.prevent="handleInvite">
+    <form @submit.prevent="handleInvite" :action="submitEndpoint" method="POST">
       <label>
         <span>Email:</span>
         <input
@@ -11,21 +11,11 @@
           @blur="heads_up = false"
         />
       </label>
-      <input
-        type="input"
-        name="sneakypizza"
-        value
-        style="display: none"
-        tabindex="-1"
-        autocomplete="off"
-      />
       <button
         type="submit"
         v-bind:class="[submitted ? 'submitted' : '']"
         :disabled="submitted == true"
-      >
-        {{ buttonText }}
-      </button>
+      >{{ buttonText }}</button>
       <transition name="notification-pop">
         <div class="message" v-if="hasResponse">{{ message }}</div>
       </transition>
@@ -80,9 +70,7 @@
           />
         </svg>
         <div>
-          <span
-            >Invite requested for {{ invitedEmail | trunc(14, "(...)") }}</span
-          >
+          <span>Invite requested for {{ invitedEmail | trunc(14, "(...)") }}</span>
           We're processing your invite.
         </div>
         <svg
@@ -123,7 +111,9 @@
         <p>
           You've already sent an invite request for that email. Please wait 24
           hours and try again or
-          <a href="mailto:info@denverdevs.org">contact help</a>.
+          <a
+            href="mailto:info@pdxdevs.org"
+          >contact help</a>.
         </p>
       </div>
     </transition>
@@ -147,14 +137,14 @@ export default {
       hasResponse: "",
       heads_up: "",
       submitted: "",
-      buttonText: "Get your invite",
+      buttonText: "Get your invite"
     };
   },
 
   filters: {
     trunc(text, length, suffix) {
       return text.length < 14 ? text : `${text.substring(0, length)}${suffix}`;
-    },
+    }
   },
   mounted() {
     lscache.flushExpired();
@@ -164,9 +154,14 @@ export default {
       this.invitedEmail = lscache.get("hasRequestedInvite");
     }
   },
+  computed: {
+    submitEndpoint() {
+      return "https://formspree.io/xpzygqrd";
+    }
+  },
 
   methods: {
-    handleInvite() {
+    handleInvite(evt) {
       if (!this.validEmail(this.email)) {
         this.setInvalidEmailStatus();
         return;
@@ -180,23 +175,20 @@ export default {
 
         setTimeout(() => {
           axios
-            .post(
-              `https://kapgbb2ttf.execute-api.us-east-1.amazonaws.com/dev/invite`,
-              {
-                email: this.email,
-              }
-            )
-            .then((response) => {
+            .post(this.submitEndpoint, {
+              email: this.email
+            })
+            .then(response => {
               this.status = response.data.status;
               this.status = "invite-success";
               setTimeout(() => {
                 this.hasResponse = false;
               }, 4000);
             })
-            .catch((error) => {
+            .catch(error => {
               console.error(error);
               this.message =
-                "Uh oh, somethings wrong here (and it's on us) - reach out to help@denverdevs.org.";
+                "Uh oh, somethings wrong here (and it's on us) - reach out to help@pdxdevs.org.";
             });
         }, 1000);
       }
@@ -213,8 +205,8 @@ export default {
       setTimeout(() => {
         this.hasResponse = false;
       }, 4000);
-    },
-  },
+    }
+  }
 };
 </script>
 
